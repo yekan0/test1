@@ -1,0 +1,23 @@
+#2-1
+x<- 1:1000
+x<- 1/x
+y<- atan(x)
+y<- tan(y)
+z<- 1/y
+z
+x == z
+identical(x,z)
+all.equal(x,z)
+all.equal(x,z,0)
+
+
+#2-2
+true_and_missing<- TRUE
+false_and_missing<- FALSE
+mixed<- c(TRUE,FALSE,NA)
+any(true_and_missing)
+any(false_and_missing)
+any(mixed)
+all(true_and_missing)
+all(false_and_missing)
+all(mixed)
